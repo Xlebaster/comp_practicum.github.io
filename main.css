@@ -81,6 +81,7 @@ header {
     background-color: #333;
     border: none;
     margin-right: 10px;
+    margin-bottom: 5px;
     text-decoration: none;
     font-size: 20px;
   }
@@ -135,12 +136,13 @@ footer {
     align-items: center;
     background-color: #333;
     padding: 10px;
-    position: fixed; 
+    position: relative; 
     bottom: 0; 
-    width: 80%;
-    /*
-    
-    */
+    left: 0;
+    right: 0;
+    max-width: 80%;
+    margin: 20px auto;
+    margin-bottom: 0%;
 }
 
 .social {
