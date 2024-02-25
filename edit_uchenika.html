@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт для поиска тренера</title>
+    <link rel="stylesheet" href="edit_uchenika.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Логотип сайта">
+            </div>
+        </header>
+        <main>
+            <div class="welcome">
+                <h1>Редактировать профиль</h1>
+            </div>
+            <div class="profile">
+                <h2>Ваш профиль:</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" value="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="...@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" value="+7 999 999 99 99" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Фото:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">О себе:</label>
+                        <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Расскажите немного о себе, своих интересах и мотивации"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal">Выберите цель:</label>
+                        <select id="goal" name="goal" required>
+                            <option value="">Выберите цель</option>
+                            <option value="lose weight">Похудеть</option>
+                            <option value="gain muscle">Набрать мышечную массу</option>
+                            <option value="improve health">Улучшить здоровье</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Выберите уровень:</label>
+                        <select id="level" name="level" required>
+                            <option value="">Выберите уровень</option>
+                            <option value="beginner">Начинающий</option>
+                            <option value="intermediate">Средний</option>
+                            <option value="advanced">Продвинутый</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipe">Придумайте ваш id:</label>
+                        <input type="text" id="recipe" name="recipe" placeholder="Введите id">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="send" name="send">Сохранить</button>
+                        <button type="reset" id="cancel" name="cancel">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="telegram.png" alt="Telegram"></a></li>
+                    <li><a href="#"><img src="YouTube.png" alt="YouTube"></a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>© 2024 Сайт для поиска тренера. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
